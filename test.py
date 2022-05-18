@@ -6,7 +6,7 @@ tools = pyocr.get_available_tools()
 tool = tools[0]
 
 #OCRの設定 ※tesseract_layout=6が精度には重要。デフォルトは3
-builder = pyocr.builders.TextBuilder(tesseract_layout=6)
+builder = pyocr.builders.TextBuilder(tesseract_layout=-1)
 
 #解析画像読み込み(雨ニモマケズ)
 img = Image.open('test.png') #他の拡張子でもOK

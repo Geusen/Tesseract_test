@@ -17,4 +17,4 @@ jobs:
           sudo apt install tesseract-ocr libtesseract-dev tesseract-ocr-jpn
           pip install pyocr
           pip install tesseract
-          python test2.py
+          python test.py

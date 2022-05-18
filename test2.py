@@ -2,7 +2,7 @@ from PIL import Image
 import pyocr
 
 #OCRの設定 ※tesseract_layout=6が精度には重要。デフォルトは3
-builder = pyocr.builders.TextBuilder(tesseract_layout=6)
+builder = pyocr.builders.TextBuilder(tesseract_layout=3)
 
 #解析画像読み込み(雨ニモマケズ)
 img = Image.open('test2.png') #他の拡張子でもOK
